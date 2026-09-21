@@ -60,7 +60,3 @@ class CommentaryCreateView(
             "blog:post-detail",
             kwargs={"pk": self.kwargs["pk"]}
         )
-
-def logout_view(request):
-    logout(request)
-    return HttpResponseRedirect(reverse("blog:index"))
