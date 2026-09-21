@@ -7,6 +7,7 @@
       <a href="{% url 'blog:post-detail' pk=post.id %}"><h3>{{ post.title }}</h3></a>
       <p>{{ post.content }}</p>
       <small>{{ post.created_time }}</small>
+      <small>{{ post.owner.username }}</small>
       <br>
     {% endfor %}
     {% include 'includes/pagination.html' with post=post %}

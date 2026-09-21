@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'blog',
     'crispy_forms',
-    'crispy_bootstrap5'
+    'crispy_bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -142,4 +142,4 @@ LOGOUT_REDIRECT_URL = '/blog/'
 
 INTERNAL_IPS = ['127.0.0.1']
 
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
